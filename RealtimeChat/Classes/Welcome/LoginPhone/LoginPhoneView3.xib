@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginPhoneView3">
+            <connections>
+                <outlet property="fieldName" destination="s54-xx-P4e" id="f32-8D-712"/>
+                <outlet property="imageUser" destination="6dS-OF-Lb9" id="AZ0-pI-oNH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginphone_blank.png" translatesAutoresizingMaskIntoConstraints="NO" id="6dS-OF-Lb9">
+                    <rect key="frame" x="125" y="30" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="GqU-9G-t30"/>
+                        <constraint firstAttribute="height" constant="70" id="Z9C-Oz-mRX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77m-fq-WF1">
+                    <rect key="frame" x="125" y="30" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="5ju-oP-qHQ"/>
+                        <constraint firstAttribute="width" constant="70" id="VAA-Ob-bVs"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPhoto:" destination="-1" eventType="touchUpInside" id="3Py-lK-uU8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCD-LJ-9NT">
+                    <rect key="frame" x="0.0" y="120" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tus-MF-OH5"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s54-xx-P4e">
+                    <rect key="frame" x="25" y="120" width="270" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Pfq-f5-W3d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="RLy-UV-btA"/>
+                    </connections>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjx-fg-kNP">
+                    <rect key="frame" x="0.0" y="164" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BaS-EP-oBv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="uOh-DS-pVV">
+                    <rect key="frame" x="0.0" y="170" width="320" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="fHg-lB-JT3"/>
+                    </constraints>
+                    <string key="text">Please enter your name and
+select a profile picture</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="s54-xx-P4e" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="2Rl-gc-5wd"/>
+                <constraint firstItem="tCD-LJ-9NT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="3c0-Va-9hQ"/>
+                <constraint firstItem="rjx-fg-kNP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9tk-HY-pUp"/>
+                <constraint firstItem="6dS-OF-Lb9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="D4q-DR-gD1"/>
+                <constraint firstAttribute="trailing" secondItem="s54-xx-P4e" secondAttribute="trailing" constant="25" id="Ov9-Xi-Oxa"/>
+                <constraint firstItem="tCD-LJ-9NT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SfN-zu-G5g"/>
+                <constraint firstAttribute="trailing" secondItem="rjx-fg-kNP" secondAttribute="trailing" id="X22-mv-EuR"/>
+                <constraint firstAttribute="trailing" secondItem="uOh-DS-pVV" secondAttribute="trailing" id="hVd-dw-l24"/>
+                <constraint firstItem="uOh-DS-pVV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kEr-MV-iCE"/>
+                <constraint firstItem="uOh-DS-pVV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="170" id="opl-NE-M6D"/>
+                <constraint firstAttribute="centerX" secondItem="77m-fq-WF1" secondAttribute="centerX" id="rJZ-Qz-gHi"/>
+                <constraint firstItem="rjx-fg-kNP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="smZ-1M-laF"/>
+                <constraint firstAttribute="trailing" secondItem="tCD-LJ-9NT" secondAttribute="trailing" id="t6R-8b-1uO"/>
+                <constraint firstAttribute="centerX" secondItem="6dS-OF-Lb9" secondAttribute="centerX" id="txl-Zf-tKl"/>
+                <constraint firstItem="77m-fq-WF1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="x3I-tD-Ojf"/>
+                <constraint firstItem="s54-xx-P4e" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="xEo-EA-Q5a"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginphone_blank.png" width="70" height="70"/>
+    </resources>
+</document>
