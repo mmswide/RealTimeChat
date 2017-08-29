@@ -1,20 +1,9 @@
-[![I am available for hire](http://relatedcode.com/github/header10.png)](http://relatedcode.com)
+[![I am available for hire]
 
 ## OVERVIEW
 
 This is a full native iPhone app to create realtime, text based group or private chat with Parse and Firebase.
 
-![Chat](http://relatedcode.com/github/chat821.png)
-.
-![Chat](http://relatedcode.com/github/chat803.png)
-.
-![Chat](http://relatedcode.com/github/chat818.png)
-
-![Chat](http://relatedcode.com/github/chat804.png)
-.
-![Chat](http://relatedcode.com/github/chat820.png)
-.
-![Chat](http://relatedcode.com/github/chat819.png)
 
 ## FEATURES
 
@@ -117,7 +106,7 @@ This is a full native iPhone app to create realtime, text based group or private
 
 ## CONTACT
 
-Do you have any questions or idea? My email is: mobileguru121@gmail.com or you can find some more info at [relatedcode.com](http://relatedcode.com)
+Do you have any questions or idea? My email is: mobileguru121@gmail.com
 
 ## LICENSE
 
